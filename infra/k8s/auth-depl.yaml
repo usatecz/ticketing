@@ -19,8 +19,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: auth-srv
+  name: auth-clusterip-srv
 spec:
+  type: ClusterIP
   selector: 
     app: auth
   ports:
